@@ -49,7 +49,7 @@
 @function px-to-vw($px, $view-port-width: 1280) {
   @return calc(#{$px} / #{$view-port-width} * 100vw);
 }
-@function Clamp($min, $max, $min-view-port: 425, $max-view-port: 1440) {
+@function Clamp($min, $max, $min-view-port: 425, $max-view-port: 1920) {
   $variable-part: calc(($max - $min) / ($max-view-port - $min-view-port));
   $constant: calc(($max - $max-view-port * #{$variable-part}) / 16);
   $min-rem: px-to-rem($min);
@@ -82,12 +82,8 @@ body {
   max-width: 1920px;
 }
 
-main {
-  max-width: 1400px;
-  padding: 0 40px 0;
-}
 .header {
-  padding: 27px 159px 38px 158px;
+  padding: Clamp(14, 27) Clamp(1, 160) Clamp(16, 38);
 
   &_container {
     display: flex;
@@ -95,17 +91,47 @@ main {
     justify-content: space-between;
 
     &_logo {
+      display: inline-block;
+      line-height: 0;
+
       img {
-        max-width: 50%;
+        display: block;
+        max-width: Clamp(200, 344.68);
       }
     }
 
     &_nav {
       display: flex;
-      gap: 72px;
+      gap: Clamp(10, 72);
       color: #717d96;
-      font-size: 24px;
+      font-size: Clamp(10, 24);
       font-weight: 700;
+      line-height: math.div(30.5, 24);
     }
   }
+}
+
+.mv {
+  background-image: url(/img/top_mv_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: Clamp(500, 928);
+  display: flex;
+  align-items: center;
+
+  &_hdg {
+    max-width: 788px;
+    font-size: Clamp(32, 64);
+    font-weight: 700;
+    line-height: math.div(72, 64);
+    color: #ffffff;
+    margin: 0 Clamp(40, 70) 0;
+  }
+}
+
+main {
+  max-width: 1400px;
+  padding: 0 40px 0;
 }
