@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@use 'sass:math';
+
+// メディアクエリ
+// --------------------------------------------------
+@mixin mqMax($breakpoint: m) {
+  @if $breakpoint == sss {
+    @media screen and (max-width: 345px) {
+      @content;
+    }
+  } @else if $breakpoint == ss {
+    @media screen and (max-width: 375px) {
+      @content;
+    }
+  } @else if $breakpoint == s {
+    @media screen and (max-width: 450px) {
+      @content;
+    }
+  } @else if $breakpoint == m {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == l {
+    @media screen and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $breakpoint {
+    @media screen and (max-width: #{$breakpoint}px) {
+      @content;
+    }
+  }
+}
+
+// ホバー
+// --------------------------------------------------
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+// vw設定やclamp設定
+// --------------------------------------------------
+@function px-to-rem($px, $base-font-size: 16) {
+  @return calc(#{$px} / #{$base-font-size} * 1rem);
+}
+@function px-to-vw($px, $view-port-width: 1280) {
+  @return calc(#{$px} / #{$view-port-width} * 100vw);
+}
+@function Clamp($min, $max, $min-view-port: 425, $max-view-port: 1440) {
+  $variable-part: calc(($max - $min) / ($max-view-port - $min-view-port));
+  $constant: calc(($max - $max-view-port * #{$variable-part}) / 16);
+  $min-rem: px-to-rem($min);
+  $max-rem: px-to-rem($max);
+  $variable-rem: calc(#{$constant} * 1rem);
+  $variable-vw: calc(100 * #{$variable-part} * 1vw);
+  @return clamp(
+    #{$min-rem},
+    calc(#{$variable-rem} + #{$variable-vw}),
+    #{$max-rem}
+  );
+}
+@function Px($value) {
+  @return px-to-rem($value);
+}
+@function VwMin($value, $view-port-width: 375) {
+  $rem-value: px-to-rem($value);
+  $vw-value: px-to-vw($value, $view-port-width);
+  @return unquote('min(#{$rem-value}, #{$vw-value})');
+}
+// 拡大
+@function VwMax($value, $view-port-width: 375) {
+  $rem-value: px-to-rem($value);
+  $vw-value: px-to-vw($value, $view-port-width);
+  @return unquote('max(#{$rem-value}, #{$vw-value})');
+}
