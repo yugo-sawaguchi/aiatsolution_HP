@@ -76,3 +76,36 @@
   $vw-value: px-to-vw($value, $view-port-width);
   @return unquote('max(#{$rem-value}, #{$vw-value})');
 }
+
+body {
+  font-family: 'Noto Serif JP', serif;
+  max-width: 1920px;
+}
+
+main {
+  max-width: 1400px;
+  padding: 0 40px 0;
+}
+.header {
+  padding: 27px 159px 38px 158px;
+
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_logo {
+      img {
+        max-width: 50%;
+      }
+    }
+
+    &_nav {
+      display: flex;
+      gap: 72px;
+      color: #717d96;
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+}

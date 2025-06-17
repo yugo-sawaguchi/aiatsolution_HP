@@ -1,1 +1,40 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Noto Serif JP", serif;
+  max-width: 1920px;
+}
+
+main {
+  max-width: 1400px;
+  padding: 0 40px 0;
+}
+
+.header {
+  padding: 27px 159px 38px 158px;
+}
+.header_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header_container_logo img {
+  max-width: 50%;
+}
+.header_container_nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 72px;
+  color: #717d96;
+  font-size: 24px;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */
