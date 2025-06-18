@@ -198,4 +198,48 @@ main {
       }
     }
   }
+
+  &_box2 {
+    margin-top: 72px;
+
+    &_list {
+      display: flex;
+      flex-direction: column;
+      gap: 68px;
+
+      &_card {
+        display: flex;
+        gap: Clamp(40, 70);
+        align-items: center;
+
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+
+        &_picture {
+          flex: 0 0 50%;
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+        }
+        &_text {
+          flex: 1;
+
+          &_hdg {
+            font-size: Clamp(24, 48.41);
+            font-weight: 700;
+            line-height: math.div(48.4, 48.41);
+          }
+          &_read {
+            font-size: Clamp(12, 24.21);
+            font-weight: 600;
+            line-height: math.div(48.4, 24.21);
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
 }
