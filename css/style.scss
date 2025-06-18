@@ -242,4 +242,40 @@ main {
       }
     }
   }
+
+  &_contact {
+    background-image: url(/img/top_box3_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    gap: Clamp(70, 93);
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    color: #ffffff;
+    padding: Clamp(50, 201) Clamp(1, 251) Clamp(50, 191) Clamp(1, 360);
+
+    &_hdg {
+      font-size: Clamp(20, 64);
+      font-weight: 700;
+      line-height: math.div(84, 64);
+    }
+    &_btn {
+      text-align: center;
+      border: 3px solid #ffffff;
+      padding: Clamp(10, 51) Clamp(1, 73) Clamp(10, 34) Clamp(1, 73);
+
+      &_hdg {
+        font-size: Clamp(20, 64);
+        font-weight: 700;
+        line-height: math.div(100, 64);
+      }
+      &_read {
+        font-size: Clamp(10, 36);
+        font-weight: 600;
+        line-height: math.div(100, 36);
+      }
+    }
+  }
 }
