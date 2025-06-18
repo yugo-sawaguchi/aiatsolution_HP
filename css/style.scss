@@ -79,11 +79,12 @@
 
 body {
   font-family: 'Noto Serif JP', serif;
-  max-width: 1920px;
+  // max-width: 1920px;
 }
 
 .header {
   padding: Clamp(14, 27) Clamp(1, 160) Clamp(16, 38);
+  margin: 0 auto;
 
   &_container {
     display: flex;
@@ -127,11 +128,74 @@ body {
     font-weight: 700;
     line-height: math.div(72, 64);
     color: #ffffff;
-    margin: 0 Clamp(40, 70) 0;
+    margin: 0 Clamp(20, 50) 0;
   }
 }
 
 main {
   max-width: 1400px;
-  padding: 0 40px 0;
+  margin: 0 auto;
+  padding: 0 20px 0;
+}
+
+.top {
+  &_box1 {
+    &_read {
+      font-size: Clamp(12, 24);
+      font-weight: 600;
+      line-height: math.div(60, 24);
+      letter-spacing: -0.01em;
+      margin-top: 60px;
+    }
+
+    &_list {
+      display: flex;
+      list-style: none;
+      margin: 32px 0 0 0;
+      padding: 0;
+
+      &_card {
+        flex: 1 1 33.3333%;
+        position: relative;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        &_text {
+          color: #ffffff;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          width: 90%;
+        }
+      }
+
+      &_hdg {
+        font-size: Clamp(17, 32);
+        font-weight: 900;
+        line-height: math.div(48, 32);
+        margin: 0;
+      }
+
+      hr {
+        width: 90%;
+        margin: 12px 0;
+        border: none;
+        border-top: 1px solid #ffffff;
+      }
+
+      &_read {
+        font-size: Clamp(17, 32);
+        font-weight: 700;
+        line-height: math.div(48, 32);
+        margin: 0;
+      }
+    }
+  }
 }

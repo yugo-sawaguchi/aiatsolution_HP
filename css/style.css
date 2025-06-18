@@ -1,10 +1,10 @@
 body {
   font-family: "Noto Serif JP", serif;
-  max-width: 1920px;
 }
 
 .header {
   padding: clamp(calc(14 / 16 * 1rem), calc(calc((27 - 1920 * 0.0086956522) / 16) * 1rem) + calc(100 * 0.0086956522 * 1vw), calc(27 / 16 * 1rem)) clamp(calc(1 / 16 * 1rem), calc(calc((160 - 1920 * 0.1063545151) / 16) * 1rem) + calc(100 * 0.1063545151 * 1vw), calc(160 / 16 * 1rem)) clamp(calc(16 / 16 * 1rem), calc(calc((38 - 1920 * 0.0147157191) / 16) * 1rem) + calc(100 * 0.0147157191 * 1vw), calc(38 / 16 * 1rem));
+  margin: 0 auto;
 }
 .header_container {
   display: -webkit-box;
@@ -62,10 +62,69 @@ body {
   font-weight: 700;
   line-height: 1.125;
   color: #ffffff;
-  margin: 0 clamp(calc(40 / 16 * 1rem), calc(calc((70 - 1920 * 0.0200668896) / 16) * 1rem) + calc(100 * 0.0200668896 * 1vw), calc(70 / 16 * 1rem)) 0;
+  margin: 0 clamp(calc(20 / 16 * 1rem), calc(calc((50 - 1920 * 0.0200668896) / 16) * 1rem) + calc(100 * 0.0200668896 * 1vw), calc(50 / 16 * 1rem)) 0;
 }
 
 main {
   max-width: 1400px;
-  padding: 0 40px 0;
+  margin: 0 auto;
+  padding: 0 20px 0;
+}
+
+.top_box1_read {
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 600;
+  line-height: 2.5;
+  letter-spacing: -0.01em;
+  margin-top: 60px;
+}
+.top_box1_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 32px 0 0 0;
+  padding: 0;
+}
+.top_box1_list_card {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 33.3333%;
+      -ms-flex: 1 1 33.3333%;
+          flex: 1 1 33.3333%;
+  position: relative;
+  overflow: hidden;
+}
+.top_box1_list_card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.top_box1_list_card_text {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+.top_box1_list_hdg {
+  font-size: clamp(calc(17 / 16 * 1rem), calc(calc((32 - 1920 * 0.0100334448) / 16) * 1rem) + calc(100 * 0.0100334448 * 1vw), calc(32 / 16 * 1rem));
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+}
+.top_box1_list hr {
+  width: 90%;
+  margin: 12px 0;
+  border: none;
+  border-top: 1px solid #ffffff;
+}
+.top_box1_list_read {
+  font-size: clamp(calc(17 / 16 * 1rem), calc(calc((32 - 1920 * 0.0100334448) / 16) * 1rem) + calc(100 * 0.0100334448 * 1vw), calc(32 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
