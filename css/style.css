@@ -230,4 +230,35 @@ main {
   font-size: clamp(calc(10 / 16 * 1rem), calc(calc((36 - 1920 * 0.0173913043) / 16) * 1rem) + calc(100 * 0.0173913043 * 1vw), calc(36 / 16 * 1rem));
   font-weight: 600;
   line-height: 2.7777777778;
+}
+
+.footer {
+  background-color: #bfd0f2;
+  text-align: center;
+  padding: 35px 20px;
+}
+.footer_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+.footer_container_nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  font-size: clamp(calc(10 / 16 * 1rem), calc(calc((17.78 - 1920 * 0.0052040134) / 16) * 1rem) + calc(100 * 0.0052040134 * 1vw), calc(17.78 / 16 * 1rem));
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
 }/*# sourceMappingURL=style.css.map */
