@@ -364,4 +364,73 @@ main {
     text-decoration: underline;
     font-weight: 700;
   }
+}
+
+.worksMv {
+  margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
+}
+
+.works_box1 {
+  text-align: center;
+}
+.works_box1_hdg {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+}
+.works_box1_contents {
+  padding: 140px 0 100px 0;
+}
+.works_box1_contents_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 82px;
+}
+.works_box1_contents_list_card {
+  background-color: #ffffff;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+.works_box1_contents_list_card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+.works_box1_contents_list_card_name, .works_box1_contents_list_card_hdg, .works_box1_contents_list_card_read {
+  max-width: 100%;
+  width: 100%;
+  text-align: left;
+}
+.works_box1_contents_list_card_name {
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 1.2708333333;
+  margin-top: 22px;
+}
+.works_box1_contents_list_card_hdg {
+  font-size: clamp(calc(16 / 16 * 1rem), calc(calc((32 - 1920 * 0.0107023411) / 16) * 1rem) + calc(100 * 0.0107023411 * 1vw), calc(32 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 0.953125;
+  color: #ff5f5f;
+  margin-top: 27px;
+}
+.works_box1_contents_list_card_read {
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 500;
+  line-height: 1.2708333333;
+  margin-top: 29px;
 }/*# sourceMappingURL=style.css.map */

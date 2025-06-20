@@ -395,3 +395,73 @@ main {
     }
   }
 }
+
+// worksページ
+.worksMv {
+  margin-top: Clamp(70, 140);
+}
+
+.works {
+  &_box1 {
+    text-align: center;
+
+    &_hdg {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    &_contents {
+      padding: 140px 0 100px 0;
+
+      &_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 82px;
+
+        &_card {
+          background-color: #ffffff;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 100%;
+
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100%;
+          }
+
+          &_name,
+          &_hdg,
+          &_read {
+            max-width: 100%;
+            width: 100%;
+            text-align: left;
+          }
+          &_name {
+            font-size: Clamp(12, 24);
+            font-weight: 700;
+            line-height: math.div(30.5, 24);
+            margin-top: 22px;
+          }
+          &_hdg {
+            font-size: Clamp(16, 32);
+            font-weight: 700;
+            line-height: math.div(30.5, 32);
+            color: #ff5f5f;
+            margin-top: 27px;
+          }
+          &_read {
+            font-size: Clamp(12, 24);
+            font-weight: 500;
+            line-height: math.div(30.5, 24);
+            margin-top: 29px;
+          }
+        }
+      }
+    }
+  }
+}
