@@ -465,3 +465,106 @@ main {
     }
   }
 }
+
+// cotactページ
+.contactMv {
+  margin-top: Clamp(70, 140);
+}
+
+.contact {
+  text-align: center;
+  max-width: 1049px;
+
+  &_hdg {
+    font-size: Clamp(32, 64);
+    font-weight: 700;
+    line-height: math.div(30.5, 64);
+    letter-spacing: -0.01em;
+    margin-top: 88px;
+  }
+  &_read {
+    font-size: Clamp(12, 24);
+    font-weight: 600;
+    line-height: math.div(44, 24);
+    margin-top: 58px;
+  }
+
+  &_privacy {
+    margin-top: Clamp(10, 33);
+    font-size: Clamp(10, 24);
+    font-weight: 600;
+    line-height: math.div(44, 24);
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      @include hover() {
+        text-decoration: underline;
+        font-weight: 900;
+      }
+    }
+  }
+  &_submit {
+    font-size: Clamp(18, 36);
+    font-weight: 600;
+    line-height: math.div(44, 36);
+    padding: 27px 60px;
+    border: 1px solid;
+    display: block;
+    margin: Clamp(61, 122) auto Clamp(131, 262);
+  }
+}
+
+form {
+  text-align: start;
+  margin: 52px auto 0;
+
+  label {
+    display: block;
+
+    p {
+      font-size: Clamp(12, 24);
+      font-weight: 600;
+      line-height: math.div(44, 24);
+    }
+  }
+  label:not(:last-of-type) {
+    margin-bottom: Clamp(40, 85);
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  textarea {
+    background-color: #d9d9d9;
+    width: 100%;
+    height: Clamp(42, 84);
+    margin-top: Clamp(11, 22);
+    font-size: Clamp(24, 48);
+  }
+  input[type='tel'] {
+    width: 60%;
+  }
+}
+// privacy_policyページ
+.privacyPolicy {
+  margin-top: Clamp(70, 140);
+  text-align: center;
+  padding-bottom: 82px;
+
+  &_hdg {
+    font-size: Clamp(32, 64);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    padding-top: 85px;
+  }
+  &_read {
+    font-size: Clamp(12, 24);
+    font-weight: 600;
+    line-height: math.div(42, 24);
+    letter-spacing: -0.01em;
+    margin-top: 53px;
+    text-align: start;
+  }
+}

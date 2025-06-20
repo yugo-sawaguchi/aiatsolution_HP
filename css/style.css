@@ -433,4 +433,101 @@ main {
   font-weight: 500;
   line-height: 1.2708333333;
   margin-top: 29px;
+}
+
+.contactMv {
+  margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
+}
+
+.contact {
+  text-align: center;
+  max-width: 1049px;
+}
+.contact_hdg {
+  font-size: clamp(calc(32 / 16 * 1rem), calc(calc((64 - 1920 * 0.0214046823) / 16) * 1rem) + calc(100 * 0.0214046823 * 1vw), calc(64 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 0.4765625;
+  letter-spacing: -0.01em;
+  margin-top: 88px;
+}
+.contact_read {
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 600;
+  line-height: 1.8333333333;
+  margin-top: 58px;
+}
+.contact_privacy {
+  margin-top: clamp(calc(10 / 16 * 1rem), calc(calc((33 - 1920 * 0.0153846154) / 16) * 1rem) + calc(100 * 0.0153846154 * 1vw), calc(33 / 16 * 1rem));
+  font-size: clamp(calc(10 / 16 * 1rem), calc(calc((24 - 1920 * 0.0093645485) / 16) * 1rem) + calc(100 * 0.0093645485 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 600;
+  line-height: 1.8333333333;
+}
+.contact_privacy a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (hover: hover) and (pointer: fine) {
+  .contact_privacy a:hover {
+    text-decoration: underline;
+    font-weight: 900;
+  }
+}
+.contact_submit {
+  font-size: clamp(calc(18 / 16 * 1rem), calc(calc((36 - 1920 * 0.0120401338) / 16) * 1rem) + calc(100 * 0.0120401338 * 1vw), calc(36 / 16 * 1rem));
+  font-weight: 600;
+  line-height: 1.2222222222;
+  padding: 27px 60px;
+  border: 1px solid;
+  display: block;
+  margin: clamp(calc(61 / 16 * 1rem), calc(calc((122 - 1920 * 0.0408026756) / 16) * 1rem) + calc(100 * 0.0408026756 * 1vw), calc(122 / 16 * 1rem)) auto clamp(calc(131 / 16 * 1rem), calc(calc((262 - 1920 * 0.0876254181) / 16) * 1rem) + calc(100 * 0.0876254181 * 1vw), calc(262 / 16 * 1rem));
+}
+
+form {
+  text-align: start;
+  margin: 52px auto 0;
+}
+form label {
+  display: block;
+}
+form label p {
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 600;
+  line-height: 1.8333333333;
+}
+form label:not(:last-of-type) {
+  margin-bottom: clamp(calc(40 / 16 * 1rem), calc(calc((85 - 1920 * 0.0301003344) / 16) * 1rem) + calc(100 * 0.0301003344 * 1vw), calc(85 / 16 * 1rem));
+}
+form input[type=text],
+form input[type=email],
+form input[type=tel],
+form textarea {
+  background-color: #d9d9d9;
+  width: 100%;
+  height: clamp(calc(42 / 16 * 1rem), calc(calc((84 - 1920 * 0.0280936455) / 16) * 1rem) + calc(100 * 0.0280936455 * 1vw), calc(84 / 16 * 1rem));
+  margin-top: clamp(calc(11 / 16 * 1rem), calc(calc((22 - 1920 * 0.0073578595) / 16) * 1rem) + calc(100 * 0.0073578595 * 1vw), calc(22 / 16 * 1rem));
+  font-size: clamp(calc(24 / 16 * 1rem), calc(calc((48 - 1920 * 0.0160535117) / 16) * 1rem) + calc(100 * 0.0160535117 * 1vw), calc(48 / 16 * 1rem));
+}
+form input[type=tel] {
+  width: 60%;
+}
+
+.privacyPolicy {
+  margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
+  text-align: center;
+  padding-bottom: 82px;
+}
+.privacyPolicy_hdg {
+  font-size: clamp(calc(32 / 16 * 1rem), calc(calc((64 - 1920 * 0.0214046823) / 16) * 1rem) + calc(100 * 0.0214046823 * 1vw), calc(64 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  padding-top: 85px;
+}
+.privacyPolicy_read {
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 600;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+  margin-top: 53px;
+  text-align: start;
 }/*# sourceMappingURL=style.css.map */
