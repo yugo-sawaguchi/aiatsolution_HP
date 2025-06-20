@@ -409,6 +409,7 @@ main {
       font-size: 64px;
       font-weight: 700;
       line-height: 1;
+      margin-top: 93px;
     }
 
     &_contents {
@@ -463,6 +464,30 @@ main {
         }
       }
     }
+  }
+}
+// workページ
+.work {
+  padding: Clamp(70, 140) 20px Clamp(70, 144);
+  text-align: center;
+
+  &_hdg {
+    font-size: Clamp(32, 64);
+    font-weight: 700;
+    line-height: 1;
+    margin-top: Clamp(30, 60);
+  }
+
+  &_read {
+    font-size: Clamp(12, 24);
+    font-weight: 600;
+    line-height: math.div(48, 24);
+    margin-top: Clamp(30, 60);
+    text-align: start;
+  }
+
+  figure {
+    margin-top: Clamp(40, 80);
   }
 }
 
@@ -566,5 +591,54 @@ form {
     letter-spacing: -0.01em;
     margin-top: 53px;
     text-align: start;
+  }
+}
+
+// companyページ
+.companyMv {
+  margin-top: Clamp(70, 140);
+}
+
+.company {
+  text-align: center;
+  max-width: 910px;
+
+  &_hdg {
+    font-size: Clamp(32, 64);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    padding-top: Clamp(45, 85);
+  }
+
+  &_table {
+    text-align: start;
+    margin: Clamp(30, 63) auto Clamp(120, 157.66);
+    font-size: Clamp(12, 24);
+    font-weight: 600;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+
+    &_row {
+      display: flex;
+      border-bottom: 1px solid #000000;
+      padding: Clamp(10, 46) 0;
+      align-items: center;
+
+      dt {
+        width: 30%;
+        line-height: math.div(96, 24);
+        padding-left: 29px;
+      }
+      dd {
+        width: 70%;
+        line-height: math.div(48, 24);
+        align-items: center;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
   }
 }
