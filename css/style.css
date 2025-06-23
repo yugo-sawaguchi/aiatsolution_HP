@@ -457,6 +457,71 @@ main {
   margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
 }
 
+.iideli {
+  padding-bottom: clamp(calc(50 / 16 * 1rem), calc(calc((100 - 1920 * 0.0334448161) / 16) * 1rem) + calc(100 * 0.0334448161 * 1vw), calc(100 / 16 * 1rem));
+}
+.iideli_box1_hdg {
+  text-align: center;
+  font-size: clamp(calc(32 / 16 * 1rem), calc(calc((64 - 1920 * 0.0214046823) / 16) * 1rem) + calc(100 * 0.0214046823 * 1vw), calc(64 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-top: clamp(calc(46 / 16 * 1rem), calc(calc((93 - 1920 * 0.0314381271) / 16) * 1rem) + calc(100 * 0.0314381271 * 1vw), calc(93 / 16 * 1rem));
+}
+.iideli_box1_read {
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: -0.01em;
+  margin-top: clamp(calc(17 / 16 * 1rem), calc(calc((35 - 1920 * 0.0120401338) / 16) * 1rem) + calc(100 * 0.0120401338 * 1vw), calc(35 / 16 * 1rem));
+}
+.iideli_box2 {
+  padding-bottom: clamp(calc(50 / 16 * 1rem), calc(calc((100 - 1920 * 0.0334448161) / 16) * 1rem) + calc(100 * 0.0334448161 * 1vw), calc(100 / 16 * 1rem));
+  border-bottom: 1px solid #000000;
+}
+.iideli_box2_hdg {
+  text-align: center;
+  font-size: clamp(calc(24 / 16 * 1rem), calc(calc((48 - 1920 * 0.0160535117) / 16) * 1rem) + calc(100 * 0.0160535117 * 1vw), calc(48 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-top: clamp(calc(46 / 16 * 1rem), calc(calc((92 - 1920 * 0.0307692308) / 16) * 1rem) + calc(100 * 0.0307692308 * 1vw), calc(92 / 16 * 1rem));
+  margin-bottom: clamp(calc(25 / 16 * 1rem), calc(calc((50 - 1920 * 0.016722408) / 16) * 1rem) + calc(100 * 0.016722408 * 1vw), calc(50 / 16 * 1rem));
+}
+.iideli_box2_read {
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: -0.01em;
+}
+.iideli_box2_list {
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: -0.01em;
+}
+.iideli_box2 a {
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: -0.01em;
+  color: #00a072;
+}
+@media (hover: hover) and (pointer: fine) {
+  .iideli_box2 a:hover {
+    font-weight: 900;
+    text-decoration: underline;
+  }
+}
+.iideli_box3_hdg {
+  text-align: center;
+  font-size: clamp(calc(24 / 16 * 1rem), calc(calc((48 - 1920 * 0.0160535117) / 16) * 1rem) + calc(100 * 0.0160535117 * 1vw), calc(48 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 1;
+  margin-top: clamp(calc(17 / 16 * 1rem), calc(calc((25 - 1920 * 0.0053511706) / 16) * 1rem) + calc(100 * 0.0053511706 * 1vw), calc(25 / 16 * 1rem));
+  margin-bottom: clamp(calc(21 / 16 * 1rem), calc(calc((43 - 1920 * 0.0147157191) / 16) * 1rem) + calc(100 * 0.0147157191 * 1vw), calc(43 / 16 * 1rem));
+}
+
 .webMv {
   margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
 }
