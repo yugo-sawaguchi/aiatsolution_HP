@@ -125,7 +125,6 @@ body {
           font-weight: 600;
           text-decoration: none;
         }
-
         @include hover() {
           text-decoration: underline;
           font-weight: 900;
@@ -313,7 +312,7 @@ main {
           flex: 1;
 
           &_hdg {
-            font-size: Clamp(24, 48.41);
+            font-size: Clamp(20, 48.41);
             font-weight: 700;
             line-height: math.div(48.4, 48.41);
           }
@@ -396,6 +395,70 @@ main {
   }
 }
 
+// サービス・事業内容
+// trust_stationページ
+.trustStationMv {
+  margin-top: Clamp(70, 140);
+}
+
+.trustStation {
+  text-align: center;
+  padding-bottom: Clamp(50, 104);
+
+  &_box1 {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    padding-bottom: Clamp(40, 89);
+    border-bottom: 1px solid #000000;
+
+    &_hdg {
+      font-size: Clamp(32, 64);
+      line-height: 1;
+      margin-top: Clamp(55, 111);
+    }
+    &_read {
+      font-size: Clamp(12, 24);
+      line-height: 2;
+      text-align: start;
+      margin-top: Clamp(20, 40);
+    }
+  }
+
+  &_box2 {
+    &_hdg {
+      font-size: Clamp(24, 48);
+      font-weight: 700;
+      line-height: 1;
+      margin: 22px auto;
+    }
+  }
+}
+
+// movieMvページ
+.movie {
+  margin-top: Clamp(70, 140);
+}
+
+// iideliページ
+.iideliMv {
+  margin-top: Clamp(70, 140);
+}
+
+// webページ
+.webMv {
+  margin-top: Clamp(70, 140);
+}
+
+// systemページ
+.system {
+  margin-top: Clamp(70, 140);
+}
+
+// devページ
+.devMv {
+  margin-top: Clamp(70, 140);
+}
+
 // worksページ
 .worksMv {
   margin-top: Clamp(70, 140);
@@ -406,19 +469,19 @@ main {
     text-align: center;
 
     &_hdg {
-      font-size: 64px;
+      font-size: Clamp(32, 64);
       font-weight: 700;
       line-height: 1;
-      margin-top: 93px;
+      margin-top: Clamp(45, 93);
     }
 
     &_contents {
-      padding: 140px 0 100px 0;
+      padding: Clamp(70, 140) 0 Clamp(50, 100) 0;
 
       &_list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 82px;
+        gap: Clamp(41, 82);
 
         &_card {
           background-color: #ffffff;
@@ -433,6 +496,7 @@ main {
             height: auto;
             display: block;
             max-width: 100%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           }
 
           &_name,
@@ -566,9 +630,6 @@ form {
     height: Clamp(42, 84);
     margin-top: Clamp(11, 22);
     font-size: Clamp(24, 48);
-  }
-  input[type='tel'] {
-    width: 60%;
   }
 }
 // privacy_policyページ

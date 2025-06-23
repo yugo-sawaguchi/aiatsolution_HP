@@ -271,7 +271,7 @@ main {
           flex: 1;
 }
 .top_box2_list_card_text_hdg {
-  font-size: clamp(calc(24 / 16 * 1rem), calc(calc((48.41 - 1920 * 0.0163277592) / 16) * 1rem) + calc(100 * 0.0163277592 * 1vw), calc(48.41 / 16 * 1rem));
+  font-size: clamp(calc(20 / 16 * 1rem), calc(calc((48.41 - 1920 * 0.0190033445) / 16) * 1rem) + calc(100 * 0.0190033445 * 1vw), calc(48.41 / 16 * 1rem));
   font-weight: 700;
   line-height: 0.9997934311;
 }
@@ -366,6 +366,58 @@ main {
   }
 }
 
+.trustStationMv {
+  margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
+}
+
+.trustStation {
+  text-align: center;
+  padding-bottom: clamp(calc(50 / 16 * 1rem), calc(calc((104 - 1920 * 0.0361204013) / 16) * 1rem) + calc(100 * 0.0361204013 * 1vw), calc(104 / 16 * 1rem));
+}
+.trustStation_box1 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  padding-bottom: clamp(calc(40 / 16 * 1rem), calc(calc((89 - 1920 * 0.0327759197) / 16) * 1rem) + calc(100 * 0.0327759197 * 1vw), calc(89 / 16 * 1rem));
+  border-bottom: 1px solid #000000;
+}
+.trustStation_box1_hdg {
+  font-size: clamp(calc(32 / 16 * 1rem), calc(calc((64 - 1920 * 0.0214046823) / 16) * 1rem) + calc(100 * 0.0214046823 * 1vw), calc(64 / 16 * 1rem));
+  line-height: 1;
+  margin-top: clamp(calc(55 / 16 * 1rem), calc(calc((111 - 1920 * 0.037458194) / 16) * 1rem) + calc(100 * 0.037458194 * 1vw), calc(111 / 16 * 1rem));
+}
+.trustStation_box1_read {
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  line-height: 2;
+  text-align: start;
+  margin-top: clamp(calc(20 / 16 * 1rem), calc(calc((40 - 1920 * 0.0133779264) / 16) * 1rem) + calc(100 * 0.0133779264 * 1vw), calc(40 / 16 * 1rem));
+}
+.trustStation_box2_hdg {
+  font-size: clamp(calc(24 / 16 * 1rem), calc(calc((48 - 1920 * 0.0160535117) / 16) * 1rem) + calc(100 * 0.0160535117 * 1vw), calc(48 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 1;
+  margin: 22px auto;
+}
+
+.movie {
+  margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
+}
+
+.iideliMv {
+  margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
+}
+
+.webMv {
+  margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
+}
+
+.system {
+  margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
+}
+
+.devMv {
+  margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
+}
+
 .worksMv {
   margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
 }
@@ -374,18 +426,18 @@ main {
   text-align: center;
 }
 .works_box1_hdg {
-  font-size: 64px;
+  font-size: clamp(calc(32 / 16 * 1rem), calc(calc((64 - 1920 * 0.0214046823) / 16) * 1rem) + calc(100 * 0.0214046823 * 1vw), calc(64 / 16 * 1rem));
   font-weight: 700;
   line-height: 1;
-  margin-top: 93px;
+  margin-top: clamp(calc(45 / 16 * 1rem), calc(calc((93 - 1920 * 0.0321070234) / 16) * 1rem) + calc(100 * 0.0321070234 * 1vw), calc(93 / 16 * 1rem));
 }
 .works_box1_contents {
-  padding: 140px 0 100px 0;
+  padding: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem)) 0 clamp(calc(50 / 16 * 1rem), calc(calc((100 - 1920 * 0.0334448161) / 16) * 1rem) + calc(100 * 0.0334448161 * 1vw), calc(100 / 16 * 1rem)) 0;
 }
 .works_box1_contents_list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 82px;
+  gap: clamp(calc(41 / 16 * 1rem), calc(calc((82 - 1920 * 0.0274247492) / 16) * 1rem) + calc(100 * 0.0274247492 * 1vw), calc(82 / 16 * 1rem));
 }
 .works_box1_contents_list_card {
   background-color: #ffffff;
@@ -410,6 +462,8 @@ main {
   height: auto;
   display: block;
   max-width: 100%;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .works_box1_contents_list_card_name, .works_box1_contents_list_card_hdg, .works_box1_contents_list_card_read {
   max-width: 100%;
@@ -528,9 +582,6 @@ form textarea {
   height: clamp(calc(42 / 16 * 1rem), calc(calc((84 - 1920 * 0.0280936455) / 16) * 1rem) + calc(100 * 0.0280936455 * 1vw), calc(84 / 16 * 1rem));
   margin-top: clamp(calc(11 / 16 * 1rem), calc(calc((22 - 1920 * 0.0073578595) / 16) * 1rem) + calc(100 * 0.0073578595 * 1vw), calc(22 / 16 * 1rem));
   font-size: clamp(calc(24 / 16 * 1rem), calc(calc((48 - 1920 * 0.0160535117) / 16) * 1rem) + calc(100 * 0.0160535117 * 1vw), calc(48 / 16 * 1rem));
-}
-form input[type=tel] {
-  width: 60%;
 }
 
 .privacyPolicy {
