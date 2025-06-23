@@ -434,9 +434,67 @@ main {
   }
 }
 
-// movieMvページ
-.movie {
+// movieページ
+.movieMv {
   margin-top: Clamp(70, 140);
+}
+
+.movie {
+  font-size: Clamp(12, 24);
+  font-weight: 600;
+  line-height: 2;
+  padding-bottom: Clamp(50, 100);
+
+  &_box1 {
+    margin-top: Clamp(50, 100);
+
+    &_hdg {
+      font-size: Clamp(32, 64);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      text-align: center;
+    }
+    &_read {
+      font-size: Clamp(12, 24);
+      font-weight: 600;
+      line-height: 2;
+      letter-spacing: -0.01em;
+      margin-top: Clamp(21, 43);
+    }
+  }
+
+  &_box2 {
+    padding-bottom: Clamp(45, 90);
+    border-bottom: 1px solid #000000;
+
+    &_hdg {
+      text-align: center;
+      font-size: Clamp(24, 48);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      margin-top: Clamp(45, 90);
+      margin-bottom: Clamp(20, 40);
+    }
+
+    &_list {
+      list-style-type: disc;
+      padding-left: 1.5em;
+    }
+  }
+
+  &_box3 {
+    padding-top: Clamp(10, 20);
+
+    &_hdg {
+      text-align: center;
+      font-size: Clamp(24, 48);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: Clamp(20, 40);
+    }
+  }
 }
 
 // iideliページ
