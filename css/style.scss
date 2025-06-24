@@ -580,6 +580,42 @@ main {
   margin-top: Clamp(70, 140);
 }
 
+.web {
+  padding-top: Clamp(47, 95);
+  padding-bottom: Clamp(50, 100);
+
+  &_box1 {
+    padding-bottom: Clamp(50, 100);
+    border-bottom: 1px solid #000000;
+
+    &_hdg {
+      text-align: center;
+      font-size: Clamp(32, 64);
+      font-weight: 700;
+      line-height: 1;
+    }
+    &_read {
+      text-align: start;
+      font-size: Clamp(12, 24);
+      font-weight: 600;
+      line-height: 2;
+      margin-top: Clamp(16, 32);
+    }
+  }
+
+  &_box2 {
+    padding-top: Clamp(12, 25);
+
+    &_hdg {
+      text-align: center;
+      font-size: Clamp(24, 48);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: Clamp(19, 38);
+    }
+  }
+}
+
 // systemページ
 .system {
   margin-top: Clamp(70, 140);
