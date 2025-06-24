@@ -617,13 +617,91 @@ main {
 }
 
 // systemページ
-.system {
+.systemMv {
   margin-top: Clamp(70, 140);
 }
 
 // devページ
 .devMv {
   margin-top: Clamp(70, 140);
+}
+
+.dev {
+  padding-top: Clamp(48, 96);
+  padding-bottom: Clamp(48, 96);
+
+  &_box1 {
+    &_hdg {
+      text-align: center;
+      font-size: Clamp(32, 64);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.01em;
+    }
+    &_read {
+      text-align: start;
+      font-size: Clamp(12, 24);
+      font-weight: 600;
+      line-height: math.div(42, 24);
+      letter-spacing: -0.01em;
+      margin-top: 11px;
+    }
+  }
+
+  &_box2 {
+    padding-bottom: Clamp(13, 26.55);
+    border-bottom: 1px solid #000000;
+
+    &_hdg {
+      text-align: center;
+      margin-top: Clamp(41, 82);
+      font-size: Clamp(24, 48);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.01em;
+    }
+    &_read {
+      text-align: start;
+      margin-top: Clamp(36, 73);
+      font-size: Clamp(12, 24);
+      font-weight: 600;
+      line-height: 2;
+      letter-spacing: -0.01em;
+    }
+
+    &_list {
+      text-align: start;
+      margin-top: Clamp(11, 22);
+      font-size: Clamp(12, 24);
+      font-weight: 600;
+      line-height: 2;
+      letter-spacing: -0.01em;
+
+      dt {
+        position: relative;
+        padding-left: 1em;
+        &::before {
+          content: '■';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  &_box3 {
+    &_hdg {
+      text-align: center;
+      margin-top: Clamp(12, 25);
+      margin-bottom: Clamp(19, 38);
+      font-size: Clamp(24, 48);
+      font-weight: 700;
+      line-height: 1;
+    }
+  }
 }
 
 // worksページ
