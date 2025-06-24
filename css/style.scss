@@ -620,6 +620,175 @@ main {
 .systemMv {
   margin-top: Clamp(70, 140);
 }
+.system {
+  padding-top: Clamp(45, 90);
+  padding-bottom: Clamp(45, 90);
+
+  &_box1 {
+    &_hdg {
+      text-align: center;
+      font-size: Clamp(32, 64);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.01em;
+    }
+    &_read {
+      text-align: start;
+      font-size: Clamp(12, 24);
+      font-weight: 600;
+      line-height: 2;
+      letter-spacing: -0.01em;
+      margin-top: Clamp(16, 32);
+    }
+  }
+
+  &_box2 {
+    margin-top: Clamp(34, 68);
+
+    &_hdg {
+      text-align: center;
+      font-size: Clamp(24, 48);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.01em;
+    }
+
+    img {
+      margin-top: Clamp(14, 29);
+    }
+  }
+
+  &_box3 {
+    &_hdg {
+      text-align: center;
+      font-size: Clamp(24, 48);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      margin-top: Clamp(50, 100);
+    }
+    &_list {
+      text-align: start;
+      font-size: Clamp(12, 24);
+      font-weight: 600;
+      line-height: 2;
+      letter-spacing: -0.01em;
+      margin-top: Clamp(10, 20);
+      dt {
+        position: relative;
+        padding-left: 1em;
+        &::before {
+          content: '■';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  &_box4 {
+    padding-bottom: Clamp(50, 100);
+    border-bottom: 1px solid #000000;
+
+    &_hdg {
+      text-align: center;
+      font-size: Clamp(24, 48);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      margin-top: Clamp(50, 100);
+    }
+
+    &_cards {
+      display: flex;
+      justify-content: space-between;
+      gap: Clamp(10, 70);
+      margin-top: Clamp(20, 40);
+
+      &_card1,
+      &_card2,
+      &_card3 {
+        width: 417px;
+        max-height: 713px;
+        text-align: center;
+        padding: 61px 25px 59px;
+        border-radius: 30px;
+        box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
+
+        .system_box4_cards_card_serviceName {
+          font-size: Clamp(16, 36);
+          font-weight: 900;
+          line-height: math.div(45, 36);
+          letter-spacing: -0.01em;
+        }
+
+        .system_box4_cards_card_serviceAbout {
+          font-size: Clamp(11, 28);
+          font-weight: 900;
+          line-height: math.div(36, 28);
+          letter-spacing: -0.01em;
+          margin-top: Clamp(25, 51);
+          padding: 12px 0 13px;
+          border-top: 3px solid #000000;
+          border-bottom: 3px solid #000000;
+        }
+
+        .system_box4_cards_card_serviceRead {
+          font-size: Clamp(14, 28);
+          font-weight: 900;
+          line-height: math.div(36, 28);
+          letter-spacing: -0.01;
+          margin-top: Clamp(17, 35);
+        }
+
+        .system_box4_cards_card_serviceList {
+          text-align: start;
+          font-size: Clamp(10, 28);
+          font-weight: 900;
+          line-height: math.div(36, 28);
+          letter-spacing: -0.01;
+          list-style-type: disc;
+          list-style-position: outside;
+          padding-left: 1.5em;
+          margin-top: Clamp(17, 35);
+        }
+
+        .system_box4_cards_card_serviceFee {
+          font-size: Clamp(16, 32);
+          font-weight: 900;
+          line-height: math.div(36, 32);
+          letter-spacing: -0.01em;
+          margin-top: Clamp(20, 41);
+        }
+      }
+
+      &_card1 {
+        background-color: #d1ffd9;
+      }
+      &_card2 {
+        background-color: #ffedad;
+      }
+      &_card3 {
+        background-color: #b0dcff;
+      }
+    }
+  }
+
+  &_box5 {
+    padding-top: Clamp(11, 22);
+
+    &_hdg {
+      text-align: center;
+      font-size: Clamp(24, 48);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: Clamp(19, 38);
+    }
+  }
+}
 
 // devページ
 .devMv {

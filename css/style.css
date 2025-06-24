@@ -563,6 +563,161 @@ main {
   margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
 }
 
+.system {
+  padding-top: clamp(calc(45 / 16 * 1rem), calc(calc((90 - 1920 * 0.0301003344) / 16) * 1rem) + calc(100 * 0.0301003344 * 1vw), calc(90 / 16 * 1rem));
+  padding-bottom: clamp(calc(45 / 16 * 1rem), calc(calc((90 - 1920 * 0.0301003344) / 16) * 1rem) + calc(100 * 0.0301003344 * 1vw), calc(90 / 16 * 1rem));
+}
+.system_box1_hdg {
+  text-align: center;
+  font-size: clamp(calc(32 / 16 * 1rem), calc(calc((64 - 1920 * 0.0214046823) / 16) * 1rem) + calc(100 * 0.0214046823 * 1vw), calc(64 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+.system_box1_read {
+  text-align: start;
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: -0.01em;
+  margin-top: clamp(calc(16 / 16 * 1rem), calc(calc((32 - 1920 * 0.0107023411) / 16) * 1rem) + calc(100 * 0.0107023411 * 1vw), calc(32 / 16 * 1rem));
+}
+.system_box2 {
+  margin-top: clamp(calc(34 / 16 * 1rem), calc(calc((68 - 1920 * 0.0227424749) / 16) * 1rem) + calc(100 * 0.0227424749 * 1vw), calc(68 / 16 * 1rem));
+}
+.system_box2_hdg {
+  text-align: center;
+  font-size: clamp(calc(24 / 16 * 1rem), calc(calc((48 - 1920 * 0.0160535117) / 16) * 1rem) + calc(100 * 0.0160535117 * 1vw), calc(48 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+.system_box2 img {
+  margin-top: clamp(calc(14 / 16 * 1rem), calc(calc((29 - 1920 * 0.0100334448) / 16) * 1rem) + calc(100 * 0.0100334448 * 1vw), calc(29 / 16 * 1rem));
+}
+.system_box3_hdg {
+  text-align: center;
+  font-size: clamp(calc(24 / 16 * 1rem), calc(calc((48 - 1920 * 0.0160535117) / 16) * 1rem) + calc(100 * 0.0160535117 * 1vw), calc(48 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-top: clamp(calc(50 / 16 * 1rem), calc(calc((100 - 1920 * 0.0334448161) / 16) * 1rem) + calc(100 * 0.0334448161 * 1vw), calc(100 / 16 * 1rem));
+}
+.system_box3_list {
+  text-align: start;
+  font-size: clamp(calc(12 / 16 * 1rem), calc(calc((24 - 1920 * 0.0080267559) / 16) * 1rem) + calc(100 * 0.0080267559 * 1vw), calc(24 / 16 * 1rem));
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: -0.01em;
+  margin-top: clamp(calc(10 / 16 * 1rem), calc(calc((20 - 1920 * 0.0066889632) / 16) * 1rem) + calc(100 * 0.0066889632 * 1vw), calc(20 / 16 * 1rem));
+}
+.system_box3_list dt {
+  position: relative;
+  padding-left: 1em;
+}
+.system_box3_list dt::before {
+  content: "■";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1em;
+}
+.system_box4 {
+  padding-bottom: clamp(calc(50 / 16 * 1rem), calc(calc((100 - 1920 * 0.0334448161) / 16) * 1rem) + calc(100 * 0.0334448161 * 1vw), calc(100 / 16 * 1rem));
+  border-bottom: 1px solid #000000;
+}
+.system_box4_hdg {
+  text-align: center;
+  font-size: clamp(calc(24 / 16 * 1rem), calc(calc((48 - 1920 * 0.0160535117) / 16) * 1rem) + calc(100 * 0.0160535117 * 1vw), calc(48 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-top: clamp(calc(50 / 16 * 1rem), calc(calc((100 - 1920 * 0.0334448161) / 16) * 1rem) + calc(100 * 0.0334448161 * 1vw), calc(100 / 16 * 1rem));
+}
+.system_box4_cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: clamp(calc(10 / 16 * 1rem), calc(calc((70 - 1920 * 0.0401337793) / 16) * 1rem) + calc(100 * 0.0401337793 * 1vw), calc(70 / 16 * 1rem));
+  margin-top: clamp(calc(20 / 16 * 1rem), calc(calc((40 - 1920 * 0.0133779264) / 16) * 1rem) + calc(100 * 0.0133779264 * 1vw), calc(40 / 16 * 1rem));
+}
+.system_box4_cards_card1, .system_box4_cards_card2, .system_box4_cards_card3 {
+  width: 417px;
+  max-height: 713px;
+  text-align: center;
+  padding: 61px 25px 59px;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
+}
+.system_box4_cards_card1 .system_box4_cards_card_serviceName, .system_box4_cards_card2 .system_box4_cards_card_serviceName, .system_box4_cards_card3 .system_box4_cards_card_serviceName {
+  font-size: clamp(calc(16 / 16 * 1rem), calc(calc((36 - 1920 * 0.0133779264) / 16) * 1rem) + calc(100 * 0.0133779264 * 1vw), calc(36 / 16 * 1rem));
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.system_box4_cards_card1 .system_box4_cards_card_serviceAbout, .system_box4_cards_card2 .system_box4_cards_card_serviceAbout, .system_box4_cards_card3 .system_box4_cards_card_serviceAbout {
+  font-size: clamp(calc(11 / 16 * 1rem), calc(calc((28 - 1920 * 0.0113712375) / 16) * 1rem) + calc(100 * 0.0113712375 * 1vw), calc(28 / 16 * 1rem));
+  font-weight: 900;
+  line-height: 1.2857142857;
+  letter-spacing: -0.01em;
+  margin-top: clamp(calc(25 / 16 * 1rem), calc(calc((51 - 1920 * 0.0173913043) / 16) * 1rem) + calc(100 * 0.0173913043 * 1vw), calc(51 / 16 * 1rem));
+  padding: 12px 0 13px;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+}
+.system_box4_cards_card1 .system_box4_cards_card_serviceRead, .system_box4_cards_card2 .system_box4_cards_card_serviceRead, .system_box4_cards_card3 .system_box4_cards_card_serviceRead {
+  font-size: clamp(calc(14 / 16 * 1rem), calc(calc((28 - 1920 * 0.0093645485) / 16) * 1rem) + calc(100 * 0.0093645485 * 1vw), calc(28 / 16 * 1rem));
+  font-weight: 900;
+  line-height: 1.2857142857;
+  letter-spacing: -0.01;
+  margin-top: clamp(calc(17 / 16 * 1rem), calc(calc((35 - 1920 * 0.0120401338) / 16) * 1rem) + calc(100 * 0.0120401338 * 1vw), calc(35 / 16 * 1rem));
+}
+.system_box4_cards_card1 .system_box4_cards_card_serviceList, .system_box4_cards_card2 .system_box4_cards_card_serviceList, .system_box4_cards_card3 .system_box4_cards_card_serviceList {
+  text-align: start;
+  font-size: clamp(calc(10 / 16 * 1rem), calc(calc((28 - 1920 * 0.0120401338) / 16) * 1rem) + calc(100 * 0.0120401338 * 1vw), calc(28 / 16 * 1rem));
+  font-weight: 900;
+  line-height: 1.2857142857;
+  letter-spacing: -0.01;
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.5em;
+  margin-top: clamp(calc(17 / 16 * 1rem), calc(calc((35 - 1920 * 0.0120401338) / 16) * 1rem) + calc(100 * 0.0120401338 * 1vw), calc(35 / 16 * 1rem));
+}
+.system_box4_cards_card1 .system_box4_cards_card_serviceFee, .system_box4_cards_card2 .system_box4_cards_card_serviceFee, .system_box4_cards_card3 .system_box4_cards_card_serviceFee {
+  font-size: clamp(calc(16 / 16 * 1rem), calc(calc((32 - 1920 * 0.0107023411) / 16) * 1rem) + calc(100 * 0.0107023411 * 1vw), calc(32 / 16 * 1rem));
+  font-weight: 900;
+  line-height: 1.125;
+  letter-spacing: -0.01em;
+  margin-top: clamp(calc(20 / 16 * 1rem), calc(calc((41 - 1920 * 0.0140468227) / 16) * 1rem) + calc(100 * 0.0140468227 * 1vw), calc(41 / 16 * 1rem));
+}
+.system_box4_cards_card1 {
+  background-color: #d1ffd9;
+}
+.system_box4_cards_card2 {
+  background-color: #ffedad;
+}
+.system_box4_cards_card3 {
+  background-color: #b0dcff;
+}
+.system_box5 {
+  padding-top: clamp(calc(11 / 16 * 1rem), calc(calc((22 - 1920 * 0.0073578595) / 16) * 1rem) + calc(100 * 0.0073578595 * 1vw), calc(22 / 16 * 1rem));
+}
+.system_box5_hdg {
+  text-align: center;
+  font-size: clamp(calc(24 / 16 * 1rem), calc(calc((48 - 1920 * 0.0160535117) / 16) * 1rem) + calc(100 * 0.0160535117 * 1vw), calc(48 / 16 * 1rem));
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: clamp(calc(19 / 16 * 1rem), calc(calc((38 - 1920 * 0.0127090301) / 16) * 1rem) + calc(100 * 0.0127090301 * 1vw), calc(38 / 16 * 1rem));
+}
+
 .devMv {
   margin-top: clamp(calc(70 / 16 * 1rem), calc(calc((140 - 1920 * 0.0468227425) / 16) * 1rem) + calc(100 * 0.0468227425 * 1vw), calc(140 / 16 * 1rem));
 }
